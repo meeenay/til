@@ -4,6 +4,46 @@
 >
 > 소스코드의 이력을 확인하고, 협업 단계에서 활용 가능하다.
 
+
+
+## gitignore
+
+프로젝트를 진행할 때, `git`으로 관리하지 않을 파일 혹은 폴더들을 설정할 수 있다.
+
+ㄴ
+
+```
+*.xlsx                  # 확장자가 xlsx인 파일
+a.txt					# txt 파일
+.ipynb_checkpoints/		# ~ 폴더
+```
+
+프로젝트 시작시 어떠한 내용을 담아야 할지 모르겠다면 [gitignore](https://www.gitignore.io/) 에서 검색한다.
+
+예) `python`, `r`, `jupyter notebook`
+
+
+
+git ignore의 편집 도구
+
+1. vim (bash에서 직접 편집)
+
+   vim이 학습곡선이 가팔라서, vim code를 게임으로 배울 수 있도록 도와주는 웹사이트[vim adventure](vim-adventures.com)
+
+2. Visual Studio Code
+
+   
+
+
+
+
+
+
+
+
+
+## 로컬저장소 활용하기
+
 ### 0. 기본 설정
 
 윈도우에서 git을 활용하기 위해서는 `git bash`가 필요하다. [설치링크](https://gitforwindows.org/)
@@ -154,6 +194,10 @@ nothing to commit, working tree clean
 
 
 
+
+
+
+
 ## 원격 저장소 (remote repository) 활용하기
 
 > 원격 저장소를 제공 해주는 서비스는 다양하다.
@@ -196,7 +240,7 @@ $ git remote -v
 
 ```
 
-### 2. puh
+### 2. push
 
 원격 저장소에 업로드하기 위해서는 push 명령어가 필요하다
 
@@ -221,4 +265,8 @@ and the repository exists.
 이후에 변경된 사항(`commit`)이 발생했을 때, git push `origin master`명령어를 통해서 매번 업로드를 해줄 수 있다. 
 
 새로운 commit이 발생했을 때만 업로드가 가능하다
+
+
+
+
 
