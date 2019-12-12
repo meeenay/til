@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 작성 팁 -->
+            <!-- 동시에 여러개 태그 생성하기 :  태그이름*횟수 -->
+            <!-- shift alt 아래로 => 생성한 태그 복사 -->
+            <!-- 태그 여러개 선택 ctl+alt + 방향커서 -->
+
+    
+    <!-- action: form안에서 받은 데이터가 어디로 갈지 설정하는 속성-->
+    <form action="/signup">    
+
+        <!-- label -->
+            <!-- label을 주는 이유 : label 태그를 기준으로 CSS를 부여하면 더 쉽게 꾸밀 수 있다 -->
+            <!-- for : label의 for 속성에 연결할 태그의 id를 입력해 연결시킴 - 여기선 input 태그와 연결 -->
+        <label for="text">TEXT</label> 
+        <input type="text" id="text"> <br>
+        <label for ="number">NUMBER</label>
+        <input type ="number"  id ="number"><br>
+            <!--디자인의 필요성을 느끼지 못하면, 아래와 같이 단순히 작성해도 무관-->
+
+        <!-- type -->
+            <!--아래의 예시를 보면, type별 차이를 관찰 할 수 있음 -->
+            <!--예를 들어 email type은 자료 전송 시에 @포함여부를 확인한다는 특징-->
+        PASSWORD: <input type ="password"><br> 
+        EMAIL: <input type = "email"><br> 
+        DATE : <input type ="date"><br>
+
+
+        <!-- Radio : 단일 선택 -->
+            <!-- Radio는 하나 누르면 다른게 취소되는 특성을 반영한 이름 -->
+            <!-- 단, 같은 name을 부여해 주어야 단일 선택 기능이 작동함 -->
+            <!-- name: 서버가 받을 변수 이름 -->
+            <!-- value: 서버가 받을 값을 지정 -->
+        <input type="radio" name="gender" value="1">남자<br> 
+        <input type="radio" name="gender" value="2">여자<br>
+        <input type="radio" name="gender" value="3">짐승<br>
+
+        <!-- Checkbox : 다중 선택 -->
+        <input type="checkbox" name="option" value="1">Python
+        <input type="checkbox" name="option" value="2">HTML <br>
+
+        <!-- Select -->
+        <select name ="country">
+            <option value="1">한국</option>
+            <option value="2">미국</option>
+            <option value="3">중국</option>
+        </select>
+
+
+        <br>
+        <input type ="submit" value = "제출하자용">
+
+    
+
+    </form>
+</body>
+</html>
