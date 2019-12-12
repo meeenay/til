@@ -6,7 +6,7 @@ START BOOTSTRAP
 
 - 부트스트랩을 이용해 만든 탬플릿이 있는 곳
 
-![image-20191210094743836](C:\Users\student\AppData\Roaming\Typora\typora-user-images\image-20191210094743836.png)
+![image-20191210094743836](C:\TIL\images\image-20191210094743836.png)
 
 
 
