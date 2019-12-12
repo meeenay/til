@@ -19,7 +19,9 @@ print(type(soup))
 
 # 3. 원하는 선택자 내용 가져오기
 
-exchange = soup.select_one('#exchangeList > li.on > a.head.usd > div > span.value').text
+exchange = soup.select_one('#exchangeList > li.on > a.head.usd > div > span.value').text 
+        # select_one: 하나의 string으로 끌어오므로, text 옵션을 적용할 수 있다 
+        # select : 여러개의 string을 list형태로 가져오므로, text옵션이 먹히지 않는다.
 
 # 4. 결과물 출력
 

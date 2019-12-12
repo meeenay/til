@@ -34,6 +34,8 @@ for make in makes:
     boxes.append(int(make))
 
 boxes.sort(reverse = True)
+    # sort를 쓰면 원본을 바꿔 정렬해주고
+    # sorted는 원본은 변형하지 않은 채, 출력의 순서만 변경함
 
 for box in boxes : 
     print(box)
