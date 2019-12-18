@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 템플릿 엔진이 없는 경우 \-->
+    <!--{{ movies }} -->
+    <ol>
+        {% for movie in movie_list%}  <!--제어문 작성-->
+            <li>{{movie}}</li>  <!--값을 출력-->
+        {% endfor %}
+    </ol>
+    
+</body>
+</html>
